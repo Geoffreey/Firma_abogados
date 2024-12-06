@@ -6769,7 +6769,7 @@ button.bg-dark:focus {
 }
 
 .embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
+/*.embed-responsive iframe,*/
 .embed-responsive embed,
 .embed-responsive object,
 .embed-responsive video {
@@ -6780,6 +6780,15 @@ button.bg-dark:focus {
   width: 100%;
   height: 100%;
   border: 0;
+}
+ .container .py-5 iframe
+ {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
 }
 
 .embed-responsive-21by9::before {
@@ -9489,9 +9498,26 @@ button.bg-dark:focus {
   text-transform: lowercase !important;
 }
 
-.text-uppercase {
-  text-transform: uppercase !important;
+.col-lg-3 a.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; /* Asegura que el texto no se desborde */
+  word-wrap: break-word; /* Permite que el texto se ajuste en varias líneas si es necesario */
+  padding: 10px; /* Espaciado adicional para evitar que el texto se pegue a los bordes */
 }
+
+.col-lg-3 h1 {
+  font-size: calc(2rem + 1vw); /* Ajusta el tamaño del texto dinámicamente según el tamaño de la pantalla */
+  line-height: 1.2; /* Espaciado entre líneas */
+  margin: 0;
+  text-align: center; /* Asegura que el texto se centre */
+  overflow-wrap: break-word; /* Ajusta el texto si es necesario */
+  word-break: break-word; /* Permite que las palabras largas se corten */
+}
+
+
 
 .text-capitalize {
   text-transform: capitalize !important;
@@ -9678,9 +9704,9 @@ a.text-dark:hover, a.text-dark:focus {
   body {
     min-width: 992px !important;
   }
-  .container {
+  /*.container {
     min-width: 992px !important;
-  }
+  }*/
   .navbar {
     display: none;
   }
