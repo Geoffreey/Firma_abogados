@@ -6364,7 +6364,7 @@ button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #9f8455 !important;
 }
-
+/*Principal encabezado y pie de pagina*/
 .bg-secondary {
   background-color: #37373F !important;
 }
@@ -6373,6 +6373,16 @@ a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
   background-color: #1f1f24 !important;
+}
+
+.navbar-brand img {
+  width: 100px; /* Tamaño del ícono */
+  margin-bottom: 10px; /* Espaciado entre el ícono y el título */
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  text-align: center;
 }
 
 .bg-success {
@@ -6570,7 +6580,7 @@ button.bg-dark:focus {
 }
 
 .d-none {
-  display: none !important;
+  display: none;
 }
 
 .d-inline {
