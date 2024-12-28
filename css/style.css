@@ -6375,10 +6375,10 @@ button.bg-secondary:focus {
   background-color: #1f1f24 !important;
 }
 
-.navbar-brand img {
+/*.navbar-brand img {
   width: 100px; /* Tamaño del ícono */
-  margin-bottom: 10px; /* Espaciado entre el ícono y el título */
-}
+  /*margin-bottom: 10px; /* Espaciado entre el ícono y el título */
+/*}*/
 
 .navbar-brand h1 {
   margin: 0;
