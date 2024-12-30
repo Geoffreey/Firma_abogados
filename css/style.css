@@ -6355,8 +6355,9 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+/* Pestaña Servicios*/
 .bg-primary {
-  background-color: #B49C73 !important;
+  background-color: #dc3545 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9565,6 +9566,10 @@ button.bg-dark:focus {
   color: var(--red);
 }
 
+.ico-primary {
+  color: var(--light);
+}
+
 a.text-primary:hover, a.text-primary:focus {
   color: #8e764c !important;
 }
@@ -9872,7 +9877,7 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #B49C73;
+  color: #dc3545;
   background: #37373F;
   border-radius: 5px;
   font-size: 22px;
