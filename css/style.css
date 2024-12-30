@@ -152,13 +152,13 @@ sup {
 }
 
 a {
-  color: #B49C73;
+  color: var(--light);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #8e764c;
+  color: var(--gray);
   text-decoration: underline;
 }
 
@@ -9928,7 +9928,7 @@ h4, h5, h6 {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  background: #B49C73;
+  background: #dc3545;
 }
 
 .testimonial-carousel .owl-dot::after {
@@ -9938,7 +9938,7 @@ h4, h5, h6 {
   right: -5px;
   bottom: -5px;
   left: -5px;
-  border: 2px solid #B49C73;
+  border: 2px solid #dc3545;
   border-radius: 20px;
 }
 
