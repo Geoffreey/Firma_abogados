@@ -233,43 +233,39 @@
                     <div class="col-lg-6 py-5">
                         <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
                             <h1 class="text-center text-white mb-4">Agenda una cita</h1>
-                            <form>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="https://legalycontableberak.com/mail/agenda.php">
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Tu nombre" required="required" />
+                                    <input type="text" name="name" class="form-control border-0 p-4" id="name" placeholder="Tu nombre" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control border-0 p-4" placeholder="Tu telefono" required="required" />
+                                    <input type="tel" name="phone" class="form-control border-0 p-4" id="phone" placeholder="Tu teléfono" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Tu correo" required="required" />
+                                    <input type="email" name="email" class="form-control border-0 p-4" id="email" placeholder="Tu correo" required />
                                 </div>
                                 <div class="form-row">
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <div class="date" id="date" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Seleccione feha" data-target="#date" data-toggle="datetimepicker"/>
-                                            </div>
+                                            <input type="text" name="date" class="form-control border-0 p-4 datetimepicker-input" id="date" placeholder="Seleccione fecha" required />
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <div class="time" id="time" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Seleccione hora" data-target="#time" data-toggle="datetimepicker"/>
-                                            </div>
+                                            <input type="text" name="time" class="form-control border-0 p-4 datetimepicker-input" id="time" placeholder="Seleccione hora" required />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Seleccione servicio</option>
+                                    <select name="service" class="custom-select border-0 px-4" required>
+                                        <option value="" selected disabled>Seleccione servicio</option>
                                         <option value="1">Servicios contables</option>
                                         <option value="2">Derecho de familia</option>
                                         <option value="3">Derecho mercantil</option>
-                                        <option value="3">Femicidio</option>
+                                        <option value="4">Femicidio</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Agenda una cita</button>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit" id="sendMessageButton">Agenda una cita</button>
                                 </div>
                             </form>
                         </div>
@@ -597,7 +593,7 @@
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="mail/agenda.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
