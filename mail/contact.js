@@ -7,6 +7,7 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("input#name").val();
+            var phone = $("input#phone").val();
             var email = $("input#email").val();
             var subject = $("input#subject").val();
             var message = $("textarea#message").val();
@@ -15,10 +16,11 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "https://legalycontableberak.com/mail/contact.php",
                 type: "POST",
                 data: {
                     name: name,
+                    phone: phone,
                     email: email,
                     subject: subject,
                     message: message
